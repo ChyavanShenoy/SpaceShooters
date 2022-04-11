@@ -1,0 +1,29 @@
+{
+  "name": "com.unity.toolchain.macos-x86_64-linux-x86_64",
+  "displayName": "Toolchain MacOS Linux x64",
+  "description": "Cross-compilation toolchain to build player target Linux x86_64 on host Darwin x86_64",
+  "version": "2.0.0",
+  "unity": "2019.4",
+  "keywords": [
+    "toolchain",
+    "macos",
+    "darwin",
+    "linux",
+    "cross-compilation"
+  ],
+  "dependencies": {
+    "com.unity.sysroot": "2.0.0",
+    "com.unity.sysroot.linux-x86_64": "2.0.0"
+  },
+  "upm": {
+    "changelog": "- Fix 1336012 - Build from windows fails if username contains space\n- Add support for new IL2CPP arguments APIs"
+  },
+  "upmCi": {
+    "footprint": "4f3ae256e266d74033f6df1a78a295fa9ed644c7"
+  },
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/com.unity.sysroot.git",
+    "type": "git",
+    "revision": "e6c53e52ad77e8d1a6cfc2707e348f9e4799c595"
+  }
+}

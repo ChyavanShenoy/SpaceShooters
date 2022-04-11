@@ -32,10 +32,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -85,6 +83,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.SpriteState
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: Main_Menu
+    methodName: LoadGame
   sceneClasses:
     Assets/Scenes/Game.unity:
     - Class: 1
@@ -128,45 +130,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 2058}
+      Script: {instanceID: 2064}
     - Class: 114
-      Script: {instanceID: 2436}
+      Script: {instanceID: 2446}
     - Class: 114
-      Script: {instanceID: 2674}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2894}
+      Script: {instanceID: 2902}
     - Class: 114
-      Script: {instanceID: 3228}
+      Script: {instanceID: 3236}
     - Class: 114
-      Script: {instanceID: 3658}
+      Script: {instanceID: 3668}
     - Class: 114
-      Script: {instanceID: 4792}
+      Script: {instanceID: 4806}
     - Class: 114
-      Script: {instanceID: 4940}
+      Script: {instanceID: 4954}
     - Class: 114
-      Script: {instanceID: 5346}
+      Script: {instanceID: 5360}
     - Class: 114
-      Script: {instanceID: 5532}
+      Script: {instanceID: 5546}
     - Class: 114
-      Script: {instanceID: 5846}
+      Script: {instanceID: 5862}
     - Class: 114
-      Script: {instanceID: 5954}
+      Script: {instanceID: 5972}
     - Class: 114
-      Script: {instanceID: 6322}
+      Script: {instanceID: 6340}
     - Class: 114
-      Script: {instanceID: 6820}
+      Script: {instanceID: 6840}
     - Class: 114
-      Script: {instanceID: 7398}
+      Script: {instanceID: 7424}
     - Class: 114
-      Script: {instanceID: 7440}
+      Script: {instanceID: 7466}
     - Class: 114
-      Script: {instanceID: 7702}
+      Script: {instanceID: 7728}
     - Class: 114
-      Script: {instanceID: 7708}
+      Script: {instanceID: 7734}
     - Class: 114
-      Script: {instanceID: 7854}
+      Script: {instanceID: 7882}
     - Class: 114
-      Script: {instanceID: 7864}
+      Script: {instanceID: 7892}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -209,19 +211,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 2674}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2894}
+      Script: {instanceID: 2902}
     - Class: 114
-      Script: {instanceID: 3188}
+      Script: {instanceID: 3196}
     - Class: 114
-      Script: {instanceID: 5532}
+      Script: {instanceID: 5546}
     - Class: 114
-      Script: {instanceID: 5846}
+      Script: {instanceID: 5862}
     - Class: 114
-      Script: {instanceID: 6322}
+      Script: {instanceID: 6340}
     - Class: 114
-      Script: {instanceID: 6808}
+      Script: {instanceID: 6828}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -333,7 +335,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerUpMessageListener
   - hash:
       serializedVersion: 2
-      Hash: f1d735cc1a21c3704ab52568f4fbfcf8
+      Hash: 91d258529db2b5060a913f2afcea1a21
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
@@ -1181,4 +1183,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Main_Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: /Users/chyavanshenoy/Desktop/Game Builds/Space Shooter/WebGL/Build_WebGL
+  playerPath: /Volumes/Seagate/Projects/Unity Builds/SpaceShooters/Web/Web

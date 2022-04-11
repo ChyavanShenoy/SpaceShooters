@@ -1426,9 +1426,9 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GUIUtility_CheckForTabEvent();
 		Register_UnityEngine_GUIUtility_CheckForTabEvent();
 
-		//System.Int32 UnityEngine.GUIUtility::GetControlID_Injected(System.Int32,UnityEngine.FocusType,UnityEngine.Rect&)
-		void Register_UnityEngine_GUIUtility_GetControlID_Injected();
-		Register_UnityEngine_GUIUtility_GetControlID_Injected();
+		//System.Int32 UnityEngine.GUIUtility::Internal_GetControlID_Injected(System.Int32,UnityEngine.FocusType,UnityEngine.Rect&)
+		void Register_UnityEngine_GUIUtility_Internal_GetControlID_Injected();
+		Register_UnityEngine_GUIUtility_Internal_GetControlID_Injected();
 
 		//System.Int32 UnityEngine.GUIUtility::Internal_GetHotControl()
 		void Register_UnityEngine_GUIUtility_Internal_GetHotControl();
@@ -1509,6 +1509,10 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.GUIUtility
 
 	//Start Registrations for type : UnityEngine.Input
+
+		//System.Boolean UnityEngine.Input::CheckDisabled()
+		void Register_UnityEngine_Input_CheckDisabled();
+		Register_UnityEngine_Input_CheckDisabled();
 
 		//System.Boolean UnityEngine.Input::GetButtonDown(System.String)
 		void Register_UnityEngine_Input_GetButtonDown();
@@ -3469,10 +3473,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.UIElements.UIR.Utility::GetActiveViewport_Injected(UnityEngine.RectInt&)
 		void Register_UnityEngine_UIElements_UIR_Utility_GetActiveViewport_Injected();
 		Register_UnityEngine_UIElements_UIR_Utility_GetActiveViewport_Injected();
-
-		//System.Void UnityEngine.UIElements.UIR.Utility::GetDeviceProjectionMatrix_Injected(UnityEngine.Matrix4x4&)
-		void Register_UnityEngine_UIElements_UIR_Utility_GetDeviceProjectionMatrix_Injected();
-		Register_UnityEngine_UIElements_UIR_Utility_GetDeviceProjectionMatrix_Injected();
 
 		//System.Void UnityEngine.UIElements.UIR.Utility::GetUnityProjectionMatrix_Injected(UnityEngine.Matrix4x4&)
 		void Register_UnityEngine_UIElements_UIR_Utility_GetUnityProjectionMatrix_Injected();
